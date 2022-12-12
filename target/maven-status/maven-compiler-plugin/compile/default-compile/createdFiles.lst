@@ -2,6 +2,8 @@ bsu\irm951\webdev\services\ConfirmationTokenService.class
 bsu\irm951\webdev\controllers\AuthController.class
 bsu\irm951\webdev\exceptions\AccountAlreadyConfirmedException.class
 bsu\irm951\webdev\repositories\UserRepository.class
+bsu\irm951\webdev\services\SerializationService.class
+bsu\irm951\webdev\models\Book.class
 bsu\irm951\webdev\repositories\ConfirmationTokenRepository.class
 bsu\irm951\webdev\services\LogarithmService.class
 bsu\irm951\webdev\boot\Runner.class
@@ -12,6 +14,7 @@ bsu\irm951\webdev\models\UserEntity.class
 bsu\irm951\webdev\services\security\BCryptSecretEncryption.class
 bsu\irm951\webdev\services\AuthService.class
 bsu\irm951\webdev\controllers\TestController.class
+bsu\irm951\webdev\controllers\SerializationController.class
 bsu\irm951\webdev\controllers\FilesController.class
 bsu\irm951\webdev\models\ConfirmationTokenEntity.class
 bsu\irm951\webdev\services\email\EmailService.class

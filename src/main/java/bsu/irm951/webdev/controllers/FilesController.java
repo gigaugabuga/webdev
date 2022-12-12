@@ -24,7 +24,7 @@ public class FilesController {
         this.jwtService = jwtService;
         this.userService = userService;
     }
-
+    @CrossOrigin
     @PostMapping("/upload")
     public String uploadFile(@RequestParam("file") MultipartFile file) {
         try {
@@ -56,6 +56,7 @@ public class FilesController {
         }
     }
 
+    @CrossOrigin
     @GetMapping("/all")
     public String findAllFiles(@RequestHeader("Authorization") String authHeader) {
         try {
@@ -66,7 +67,7 @@ public class FilesController {
                 JSONObject response = new JSONObject();
                 response.put("result", true);
                 response.put("message", "");
-                response.put("data", files.size() == 0 ? "Files not found" : files);
+                response.put("data", files == null ? "Files not found" : files);
                 return response.toString();
             } catch (Exception e) {
                 JSONObject response = new JSONObject();

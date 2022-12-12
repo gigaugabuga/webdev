@@ -6,10 +6,7 @@ import bsu.irm951.webdev.services.UserService;
 import bsu.irm951.webdev.services.security.JWTService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.json.JSONObject;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value="ip", produces="application/json")
@@ -24,7 +21,7 @@ public class IPController {
         this.ipService = ipService;
         this.jwtService = jwtService;
     }
-
+    @CrossOrigin
     @GetMapping("/")
     public String defineIPAddress(@RequestHeader("Authorization") String authHeader,
                                   HttpServletRequest request) {

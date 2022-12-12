@@ -5,10 +5,7 @@ import bsu.irm951.webdev.models.UserEntity;
 import bsu.irm951.webdev.services.AuthService;
 import com.google.gson.Gson;
 import org.json.JSONObject;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.xml.bind.ValidationException;
 
@@ -21,7 +18,7 @@ public class AuthController {
     public AuthController(AuthService authService) {
         this.authService = authService;
     }
-
+    @CrossOrigin
     @PostMapping("/new")
     public String registerUser(@RequestParam("name") String name,
                                @RequestParam("email") String email,
@@ -52,7 +49,7 @@ public class AuthController {
         response.put("data", "");
         return response.toString();
     }
-
+    @CrossOrigin
     @PostMapping("/confirm")
     public String confirmUser(@RequestParam("username") String username,
                               @RequestParam("token") String token) {
@@ -86,7 +83,7 @@ public class AuthController {
         response.put("data", "");
         return response.toString();
     }
-
+    @CrossOrigin
     @PostMapping("/login")
     public String login(@RequestParam(name = "username") String username,
                         @RequestParam(name = "password") String password) {
@@ -127,7 +124,7 @@ public class AuthController {
         }
         response.put("result", true);
         response.put("message", "");
-        response.put("data", new Gson().toJson(user));
+        response.put("data", user.getToken());
         return response.toString();
     }
 

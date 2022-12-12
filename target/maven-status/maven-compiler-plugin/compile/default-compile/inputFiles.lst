@@ -1,3 +1,4 @@
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\models\Book.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\InvalidEmailException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\EmailAlreadyTakenException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\models\ConfirmationTokenEntity.java
@@ -16,6 +17,7 @@ C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\Test
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\AccountNotConfirmedException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\repositories\ConfirmationTokenRepository.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\IPService.java
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\SerializationService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\WrongPasswordException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\validators\UserValidator.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\controllers\TasksController.java
@@ -25,6 +27,7 @@ C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\controllers\I
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\models\UserEntity.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\TokenExpiredException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\security\JWTService.java
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\controllers\SerializationController.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\UserService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\email\messages\ConfirmationTokenEmail.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\FileService.java

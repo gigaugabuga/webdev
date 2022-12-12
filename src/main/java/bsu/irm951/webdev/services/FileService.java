@@ -27,9 +27,9 @@ public class FileService {
     public ArrayList<String> all(UserEntity user) {
         File folder = new File("C:\\Users\\yard7\\IdeaProjects\\webdev\\src\\main\\resources\\Uploads\\" + user.getRepository());
         ArrayList<String> files = new ArrayList<String>();
-        if(folder.listFiles().length > 0) {
-            for (File file : folder.listFiles()) {
-                files.add(file.getName());
+        if(folder.listFiles() != null && folder.listFiles().length > 0) {
+            for(int i = 0; i < folder.listFiles().length; i++) {
+                files.add(folder.listFiles()[i].getName());
             }
         } else {
             return null;
