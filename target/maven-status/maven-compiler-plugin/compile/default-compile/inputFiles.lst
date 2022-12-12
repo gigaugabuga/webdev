@@ -15,13 +15,17 @@ C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\secu
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\TestService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\AccountNotConfirmedException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\repositories\ConfirmationTokenRepository.java
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\IPService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\WrongPasswordException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\validators\UserValidator.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\controllers\TasksController.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\email\EmailService.java
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\controllers\FilesController.java
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\controllers\IPController.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\models\UserEntity.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\TokenExpiredException.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\security\JWTService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\UserService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\email\messages\ConfirmationTokenEmail.java
+C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\services\FileService.java
 C:\Users\yard7\IdeaProjects\webdev\src\main\java\bsu\irm951\webdev\exceptions\WrongTokenException.java

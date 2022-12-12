@@ -4,6 +4,7 @@ import bsu.irm951.webdev.models.UserEntity;
 import bsu.irm951.webdev.repositories.UserRepository;
 import bsu.irm951.webdev.services.email.EmailService;
 import bsu.irm951.webdev.services.security.SecretEncryption;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -23,6 +24,7 @@ public class UserService {
 
     public UserEntity store(UserEntity userToStore) {
         userToStore.setPassword(secretEncoder.encrypt(userToStore.getPassword()));
+        userToStore.setRepository(RandomStringUtils.random(32, "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"));
         userRepository.save(userToStore);
         return userToStore;
     }
@@ -35,6 +37,15 @@ public class UserService {
         Optional<UserEntity> optRegisteredUserEntity = userRepository.findByName(name);
         if(optRegisteredUserEntity.isPresent()) {
             return optRegisteredUserEntity.get();
+        } else {
+            return null;
+        }
+    }
+
+    public UserEntity findById(Long id) {
+        Optional<UserEntity> optionalUserEntity = userRepository.findById(id);
+        if(optionalUserEntity.isPresent()) {
+            return optionalUserEntity.get();
         } else {
             return null;
         }
@@ -62,4 +73,5 @@ public class UserService {
 
         return entityToReturn;
     }
+
 }

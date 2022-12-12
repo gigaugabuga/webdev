@@ -14,6 +14,10 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.ValidationException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -80,6 +84,13 @@ public class AuthService {
             response.put("result", false);
             response.put("message", "" + message.substring(message.indexOf("(") + 1, message.indexOf(")")) + " already used");
             return response.toString();*/
+        }
+
+        try {
+            Path path = Paths.get("C:\\Users\\yard7\\IdeaProjects\\webdev\\src\\main\\resources\\Uploads\\" + savedUser.getRepository());
+            Files.createDirectories(path);
+        } catch (IOException e) {
+            System.err.println("Failed to create directory!" + e.getMessage());
         }
 
         return savedUser;

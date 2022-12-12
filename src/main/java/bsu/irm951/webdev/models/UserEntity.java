@@ -28,6 +28,9 @@ public class UserEntity {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
+    @Column(name = "repository", unique = true)
+    private String repository;
+
     private String token;
 
     public UserEntity(String name, String password, String email) {
@@ -68,6 +71,13 @@ public class UserEntity {
         this.email = email;
     }
 
+    public String getRepository(){
+        return repository;
+    }
+
+    public void setRepository(String repository) {
+        this.repository = repository;
+    }
     public String getToken(){
         return token;
     }
