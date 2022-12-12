@@ -10,11 +10,11 @@ auth:
 spring:
   datasource:
     #71742509 -- 3908f476aa769cbbe8ca61cb5e998151e2100c0211db01de190b5c9010764d90
-    password: 71742509
+    password: O2xc8jqpLAWj9P9Qeh9nyFA1qO1uGwqE
     #jdbc:postgresql://localhost:5433/testdb -- jdbc:postgres://ogyaggevfdvlgz:3908f476aa769cbbe8ca61cb5e998151e2100c0211db01de190b5c9010764d90@ec2-52-86-115-245.compute-1.amazonaws.com:5432/d9ld1ln7uuafpo
-    url: jdbc:postgresql://localhost:5432/webdev
+    url: jdbc:postgresql://dpg-cebpvmqrrk0506sq7970-a:5432/webdev
     #postgres --
-    username: postgres
+    username: pstgrs
   jpa:
     hibernate:
       #create-drop -- validate
